@@ -14,6 +14,13 @@ public class MyIntList {
 
 	public void add(int num) {
 		myArr[cursor++] = num;
+		if (myArr.length < num) {
+			try {
+			} catch (ArrayIndexOutOfBoundsException e) {
+				e.printStackTrace();
+				System.out.println("배열의 인덱스 범위를 초과했습니다. 다시 설정해주세요");
+			}
+		}
 	}
 
 	public int get(int idx) {
@@ -33,13 +40,13 @@ public class MyIntList {
 		return "[" + tmp + "]";
 	}
 
-	public void remove(int i) {
-		// TODO Auto-generated method stub
-		
+	public boolean remove(int index) {
+		return false;
 	}
 
-	public void clear() {
-		// TODO Auto-generated method stub
-		
+	public int clear(int index) {
+		myArr[index] = 0;
+		return myArr[index];
+
 	}
 }

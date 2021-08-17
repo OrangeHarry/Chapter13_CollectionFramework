@@ -15,6 +15,7 @@ class MyClass {
 
 public class CollectionEx {
 	public static void main(String[] args) {
+		
 
 		// 값을 저장하는 배열
 		int[] arr1 = new int[3];
@@ -58,6 +59,7 @@ public class CollectionEx {
 		list5.add(0.1);
 		System.out.println(list5);
 		
+		
 		Set<Double> set = new HashSet<Double>(); //Set은 중복을 받아들이지 않는다.
 		set.add(0.1);
 		set.add(0.1);
@@ -68,5 +70,6 @@ public class CollectionEx {
 		map.put(211, "강남");
 		map.put(201, "종로");
 		System.out.println(map);
+		
 	}
 }
