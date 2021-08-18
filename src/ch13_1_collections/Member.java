@@ -13,7 +13,6 @@ public class Member {
 		return name.hashCode() + age;
 	}          //String의 hashcode() 이용(String형을 숫자 주소값으로 표현)
 	
-	//사실 위에 메소드만으로도 결과 표시가 되긴해
 	@Override
 	public boolean equals(Object obj) { //name과 age값이 같으면 true를 리턴
 		if(obj instanceof Member) {
